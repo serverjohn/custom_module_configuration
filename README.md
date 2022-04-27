@@ -150,8 +150,6 @@ The routing.yml file is stored in the root directory of your custom module file 
 
 The custom_module.routing.yml file, in this case, is going to tell Drupal that there is a page at `/admin/config/development/custom-module`. That page will have a form, title, and a required permission to access it.
 
-`/docroot/sites/default/modules/custom/custom_module/custom_module.routing.yml`
-
 ``` yaml
 custom_module.form:
   path: '/admin/config/development/custom-module'
