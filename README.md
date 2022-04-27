@@ -47,12 +47,12 @@ The form class is the basis of the form. There is some configuration before the 
  * Contains Drupal\custom_module\Form\CustomModuleForm.
  */
 
-namespace Drupal\policy_library\Form;
+namespace Drupal\custom_module\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-class PolicyLibraryForm extends ConfigFormBase {
+class CustomModuleForm extends ConfigFormBase {
 	// Methods below and code go in this class
 }
 ```
