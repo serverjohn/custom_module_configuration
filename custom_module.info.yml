@@ -1,1 +1,6 @@
-custom_module.info.yml
+name: Custom Module
+description: Custom module with configurations.
+package: Custom
+
+type: module
+core_version_requirement: ^9

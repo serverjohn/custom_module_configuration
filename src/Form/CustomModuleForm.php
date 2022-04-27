@@ -5,21 +5,12 @@
  * Contains Drupal\custom_module\Form\CustomModuleForm.
  */
 
-namespace Drupal\policy_library\Form;
+namespace Drupal\custom_module\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
-class PolicyLibraryForm extends ConfigFormBase {
-
-  /**
-   * {@inheritdoc}
-   */
-  protected function getEditableConfigNames() {
-    return [
-      'custom_module.settings',
-    ];
-  }
+class CustomModuleForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
@@ -44,6 +35,7 @@ class PolicyLibraryForm extends ConfigFormBase {
       '#default_value' => $config->get('custom_module.custom_module_settings'),
       '#description' => $this->t('Enter custom module setting'),
     ];
+    return $form;
   }
 
   /**
@@ -61,6 +53,15 @@ class PolicyLibraryForm extends ConfigFormBase {
     $config->set('custom_module.custom_module_settings', $form_state->getValue('custom_module_settings'));
     $config->save();
     return parent::submitForm($form, $form_state);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getEditableConfigNames() {
+    return [
+      'custom_module.settings',
+    ];
   }
 
 }
