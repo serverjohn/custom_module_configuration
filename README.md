@@ -173,6 +173,8 @@ custom_module.form:
   parent: 'system.admin_config_development'
 ```
 
+## Sources
 
-
+* [Part II of A practical guide to building basic Drupal 8 modules](https://www.drupal.org/docs/creating-custom-modules/basic-module-building-tutorial-lorem-ipsum-generator/basic-structure)
+* [Step by step guide to creating an admin form in Drupal 8](https://befused.com/drupal/drupal8-admin-form-guide/)
 
